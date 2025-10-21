@@ -162,7 +162,7 @@ const Globe = () => {
          fragmentShader={fragmentShader}
          uniforms={uniforms.current}
          side={THREE.DoubleSide}
-         //@ts-ignore
+         //@ts-expect-error
          flatShading
          wireframe
         />

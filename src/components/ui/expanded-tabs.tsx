@@ -96,7 +96,7 @@ export function ExpandedTabs({
             animate="animate"
             custom={selected === index}
             onClick={() => handleSelect(index)}
-            //@ts-ignore
+            //@ts-expect-error
             transition={transition}
             className={cn(
               "relative flex items-center rounded-xl px-4 py-2 text-sm font-medium transition-colors duration-300",
@@ -113,7 +113,7 @@ export function ExpandedTabs({
                   initial="initial"
                   animate="animate"
                   exit="exit"
-                  //@ts-ignore
+                  //@ts-expect-error
                   transition={transition}
                   className="overflow-hidden"
                 >
