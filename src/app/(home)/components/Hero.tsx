@@ -280,7 +280,8 @@ export default function Hero({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Every brand has <strong className="text-white">potential</strong>, we build the systems to unlock it.
+            Every brand has <strong className="text-white">potential</strong>,<br className="md:hidden" />
+            we build the systems to unlock it.
           </motion.p>
 
           {/* CTA Button */}

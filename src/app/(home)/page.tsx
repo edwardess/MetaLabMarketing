@@ -7,6 +7,7 @@ import ButtonShowcase from './components/ButtonShowcase'
 import Testimonials from './components/Testimonials'
 import Work from './components/Work'
 import Link from './components/Link'
+import AboutUs from './components/AboutUs'
 import Faq from './components/Faq'
 import Footer from './components/Footer'
 
@@ -21,8 +22,9 @@ const  Page = () => {
        <ComponentsShowcase/>
        <Testimonials/>
        <Work/>
+      
+       <AboutUs/>
        <Link/>
-
        <Footer/>
      </div>
    </Layout>

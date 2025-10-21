@@ -146,7 +146,7 @@ const ComponentsShowcase = () => {
 
          {/* Second row - 1 video (type-3) */}
          <div className='flex items-center justify-center'>
-          <MaskedDiv maskType="type-3" size={0.7} >
+          <MaskedDiv maskType="type-4" size={1} >
           <video
             className="cursor-pointer transition-all duration-300 hover:scale-105"
             autoPlay

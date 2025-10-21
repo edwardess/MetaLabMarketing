@@ -63,9 +63,9 @@ const Carousel_001 = ({
   showNavigation = false,
   loop = true,
   autoplay = false,
-  spaceBetween = 40,
+  spaceBetween = 80,
 }: {
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; link?: string }[];
   className?: string;
   showPagination?: boolean;
   showNavigation?: boolean;
@@ -86,7 +86,7 @@ const Carousel_001 = ({
         duration: 0.3,
         delay: 0.5,
       }}
-      className={cn("w-3xl relative", className)}
+      className={cn("w-3xl lg:w-6xl relative", className)}
     >
       <style>{css}</style>
 
@@ -131,7 +131,7 @@ const Carousel_001 = ({
         modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} className="!h-[350px]  w-full border relative overflow-hidden rounded-2xl">
+          <SwiperSlide key={index} className="!h-[350px] lg:!h-[600px] w-full border relative overflow-hidden rounded-2xl">
             {/* Looping video background */}
             <video
               className="absolute inset-0 h-full w-full object-cover rounded-2xl"
@@ -148,6 +148,18 @@ const Carousel_001 = ({
               src={image.src}
               alt={image.alt}
             />
+            {/* Clickable arrow button */}
+            <a
+              href={image.link || "#"}
+              className="absolute left-1/2 transform -translate-x-1/2 z-20 w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110"
+              style={{ top: '55%' }}
+            >
+              <img 
+                src="/assets/images/logo_light.png" 
+                alt="Meta Lab Marketing Studio" 
+                className="h-6 w-6 object-contain"
+              />
+            </a>
           </SwiperSlide>
         ))}
         {showNavigation && (
