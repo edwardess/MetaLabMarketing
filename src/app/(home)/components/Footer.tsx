@@ -308,11 +308,7 @@ const Footer = () => {
 
   {/* Right side */}
   <div className="flex flex-wrap justify-center md:justify-end gap-16 text-xs font-mono">
-    <div className="flex flex-col gap-1 items-center md:items-end">
-      <a href="#" className="hover:underline">Contact</a>
-      <a href="#" className="hover:underline">Blogs</a>
-      <a href="#" className="hover:underline">Collaboration</a>
-    </div>
+
 
   </div>
 </div>

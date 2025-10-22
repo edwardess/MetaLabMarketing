@@ -57,7 +57,7 @@ const ComponentsShowcase = () => {
           muted
         >
          <source
-            src="https://files.catbox.moe/v7xhuv.mp4"
+            src="https://file.garden/aPghh4sL7CGaPK8H/1stcolumnv2z.mp4"
             type="video/mp4"
           />
         </video>
@@ -152,6 +152,7 @@ const ComponentsShowcase = () => {
             autoPlay
             loop
             muted
+            
           >
                 <source
                 src="https://files.catbox.moe/96ay6e.mp4"
