@@ -57,7 +57,7 @@ const ComponentsShowcase = () => {
           muted
         >
          <source
-            src="https://file.garden/aPghh4sL7CGaPK8H/1stcolumnv2z.mp4"
+            src="https://file.garden/aPghh4sL7CGaPK8H/1stcolumn-final.mp4"
             type="video/mp4"
           />
         </video>
